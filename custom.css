@@ -26,5 +26,21 @@ footer {
 }
 
 body {
-    padding-top: 80px; /* Muuda see väärtus vastavalt navbari kõrgusele */
+    padding-top: 80px;
+}
+
+#pildiKarusell {
+    max-width: 1000px;
+    max-height: 500px;
+    overflow: hidden;
+}
+
+#pildiKarusell img {
+    object-fit: cover; /* crop instead of squish */
+    height: 400px; /* match carousel height */
+  }
+
+
+#scroll-container {
+  scroll-behavior: smooth;
 }

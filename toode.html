@@ -14,12 +14,12 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" rel="stylesheet">
   <!--minu CSS-->
   <link rel="stylesheet" href="custom.css">
- 
+
 </head>
 
 <body>
-<!-- Navigatsioon --->
-  <nav class="navbar navbar-expand-lg bg-dark py-3" data-bs-theme="dark">
+  <!-- Navigatsioon --->
+  <nav class="navbar navbar-expand-lg bg-dark py-3 fixed-top" data-bs-theme="dark">
     <div class="container">
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,8 +47,8 @@
             </ul>
           </li>
         </ul>
-       
-	   <!--Otsi vorm -->
+
+        <!--Otsi vorm -->
         <form class="d-flex me-1">
           <div class="input-group">
             <div class="input-group-text"><span class="bi bi-search mb-2"></span></div>
@@ -57,11 +57,11 @@
         </form>
       </div>
       <div class="float-end">
-      
-	  <!--Login ikoon-->
+
+        <!--Login ikoon-->
         <button class="btn btn-link text-light" type="submit"><span class="bi bi-person"></span></button>
-      
-	  <!--Ostukorvi ikoon-->
+
+        <!--Ostukorvi ikoon-->
         <a class="btn btn-primary" href="ostukorv.html" type="submit"><span class="bi bi-cart3"></span></button></a>
       </div>
     </div>
@@ -85,13 +85,13 @@
           <div class="accordion" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
                   Materjal ja hooldus
                 </button>
               </h2>
-			<!--Tee ise: esimene valik peab olema lehe avamisel avatud.-->
-              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <!--Tee ise: esimene valik peab olema lehe avamisel avatud.-->
+              <div id="collapseOne" class="accordion-collapse show" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
                   <strong>Hoolda seda toodet õigete vahenditega.</strong> Lorem ipsum dolor sit amet, consectetur
                   adipiscing elit. Phasellus tempor gravida ipsum, non mollis lorem luctus ac. Proin interdum tortor a
@@ -130,23 +130,51 @@
               </select>
             </div>
           </div>
-          
-		  <!--Ostukorvi lisamise nupp lingina-->
+
+          <!--Ostukorvi lisamise nupp lingina-->
           <a class="btn btn-outline-primary btn-lg my-3 float-end" href="ostukorv.html" role="button">Lisa ostukorvi</a>
-        
-		</div>
+
+        </div>
       </div>
     </div>
     </div>
   </section>
-  
+
   <!--Tee ise: kujunda siia korrektne jalus - lisa kontaktid ja sotsiaalvõrgustike lingid ikoonidega.-->
-  <footer class="footer bg-light">
-    <div class="container">
-      <h1>Jalus</h1>
+  <footer class="footer bg-light text-dark mt-5">
+    <div class="container py-4">
+      <div class="row">
+
+        <!-- Kontaktinfo -->
+        <div class="col-md-6 mb-3">
+          <h5>Kontakt</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-geo-alt-fill me-2"></i>Narva mnt 18, Tartu </li>
+            <li><i class="bi bi-telephone-fill me-2"></i><a href="tel:+3721234567"
+                class="text-dark text-decoration-none">+372 123 4567</a></li>
+            <li><i class="bi bi-envelope-fill me-2"></i><a href="mailto:info@pood.ee"
+                class="text-dark text-decoration-none">info@saapad.ee</a></li>
+          </ul>
+        </div>
+
+        <!-- Sotsiaalmeedia -->
+        <div class="col-md-6 mb-3 text-md-end">
+          <h5>Jälgi meid</h5>
+          <a href="#" class="text-dark me-3"><i class="bi bi-facebook fs-4"></i></a>
+          <a href="#" class="text-dark me-3"><i class="bi bi-instagram fs-4"></i></a>
+          <a href="#" class="text-dark me-3"><i class="bi bi-twitter fs-4"></i></a>
+          <a href="#" class="text-dark"><i class="bi bi-youtube fs-4"></i></a>
+        </div>
+
+      </div>
+
+      <hr>
+      <div class="text-center small">
+        &copy; 2025 Saapapood
+      </div>
     </div>
   </footer>
-  
+
   <!--Popper.js-->
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
     integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
@@ -156,7 +184,7 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
     integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
     crossorigin="anonymous"></script>
-  
+
 </body>
 
 </html>
