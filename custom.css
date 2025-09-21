@@ -24,3 +24,7 @@ footer {
     font-size: 1.25rem;
     
 }
+
+body {
+    padding-top: 80px; /* Muuda see väärtus vastavalt navbari kõrgusele */
+}
